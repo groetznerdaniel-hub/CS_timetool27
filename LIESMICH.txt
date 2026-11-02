@@ -1,0 +1,45 @@
+Arbeitszeiterfassung fuer CS Elektrotechnik - Installation
+
+1. Alle Dateien dieses Ordners auf einen Webspace mit HTTPS hochladen
+   (z. B. Netlify Drop, GitHub Pages, Cloudflare Pages oder dem eigenen Webserver).
+   Wichtig: Die Seite muss ueber https:// erreichbar sein. Ein Doppelklick auf
+   index.html reicht zum Ausprobieren, aber nicht zum Installieren.
+2. Die Adresse auf dem Geraet oeffnen und installieren:
+   - Android (Chrome): Menue (drei Punkte) -> "App installieren" bzw. "Zum Startbildschirm".
+   - iPhone/iPad (Safari): Teilen-Symbol -> "Zum Home-Bildschirm".
+   - Windows (Edge oder Chrome): Installieren-Symbol in der Adressleiste, oder
+     Menue -> "Apps" -> "Diese Website als App installieren".
+3. Die App danach immer ueber das Symbol starten (nicht ueber den Browser),
+   damit die Daten dort liegen.
+
+Hinweise
+- Die Daten bleiben auf dem jeweiligen Geraet (im Speicher der App). Browser und
+  installierte App haben getrennte Speicher; Daten aus dem Browser erscheinen
+  nicht automatisch in der installierten App.
+- Der Button "Senden an" oeffnet das Teilen-Menue des Geraets (z. B. WhatsApp oder
+  E-Mail) mit der CSV-Datei und der Nachricht an Chef Christoph.
+- Der Button "Speichern" legt die CSV-Datei an einem Ort der Wahl ab. Der Dateiname
+  enthaelt Name und aktuelles Datum.
+- Der Pin neben dem Feld "Ort" traegt den aktuellen Standort ein (Standortfreigabe noetig).
+  Die Adresse wird ueber OpenStreetMap (Nominatim) ermittelt, dafuer werden die Koordinaten
+  an diesen Dienst gesendet.
+- Beim ersten Einstempeln eines Eintrags wird der Standort automatisch bei "Ort" eingetragen,
+  sofern das Feld leer ist und die Standortfreigabe erteilt wurde.
+- Die App hat fuenf Seiten: oben Erfassen, Uebersicht und Auszahlungen, unten auf der Seite
+  Einstellungen und Impressum.
+- Impressum: Die Visitenkarte ist direkt in index.html eingebaut (keine extra Bilddatei).
+- Fotos: Der eigene Button "🖼️ Foto" neben dem Feld "Ort" fuegt Bilder aus der Galerie (oder Kamera) hinzu. Sie werden
+  verkleinert auf dem Geraet gespeichert (nicht im CSV-Export) und sind in der Uebersicht ueber 📷 abrufbar.
+- "Senden an" haengt an die Nachricht automatisch den Monatsbericht (Monat aus der Uebersicht),
+  die ausbezahlten Stunden/Fahrpauschalen und den offenen Betrag an.
+- Das Symbol ↺ oben rechts bei "Neuer Eintrag" setzt alle Eingaben zurueck (zweimal tippen zur Bestaetigung).
+- Uebersicht: "Ausbezahlt" gilt nur fuer den gewaehlten Monat und beginnt jeden neuen Monat bei 0.
+  "Verbleibend" und "Offener Betrag" sind laufende Staende ueber alle Monate.
+- Name: Beim ersten Oeffnen fragt die App den Namen ab und uebernimmt ihn ins Feld "Name des
+  Mitarbeiters" (Einstellungen). Ohne Namen kann nichts gesendet oder als CSV gespeichert werden.
+- "Export und Nachricht an Chef Christoph" steht jetzt auf der Seite Uebersicht (ohne Nachrichtenfeld).
+  "Senden an" schickt den gewaehlten Monat mit Baustellen, Taetigkeiten und Zeiten; der offene Betrag
+  ist hervorgehoben, im Betreff steht "Geld benoetigt".
+- Daten uebernehmen: Wird die neue Version unter derselben Adresse wie die alte hochgeladen, bleiben alle Daten
+  automatisch erhalten. Unter Einstellungen gibt es zusaetzlich "Sicherung speichern" und "Daten uebernehmen"
+  (Sicherung oder CSV aus einer aelteren Version laden).
